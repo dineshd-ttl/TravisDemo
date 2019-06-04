@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'TravisDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for TravisDemo
+
+pod 'MBProgressHUD'
+pod 'IQKeyboardManagerSwift'
+
+  target 'TravisDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'TravisDemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
