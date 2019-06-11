@@ -7,8 +7,7 @@ target 'TravisDemo' do
 
   # Pods for TravisDemo
 
-pod 'MBProgressHUD'
-pod 'IQKeyboardManagerSwift'
+
 
   target 'TravisDemoTests' do
     inherit! :search_paths
