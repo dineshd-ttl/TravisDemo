@@ -1,7 +1,8 @@
 language: Swift
 osx_image: xcode10.2.1
-xcode_project: TravisDemo.xcodeproj
+xcode_workspace: TravisDemo.xcworkspace
 xcode_scheme: TravisDemoTests
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
-
+script: 
+  - set -o pipefail && xcodebuild -project TravisDemo.xcodeproj -scheme TravisDemoTests -destination platform\=iOS\ Simulator,OS\=12.1,name\=iPhone\ X build test | xcpretty
   
