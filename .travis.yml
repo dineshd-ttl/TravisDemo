@@ -1,17 +1,19 @@
-language: objective-c
-osx_image: xcode10.2
-xcode_workspace: TravisDemo.xcworkspace # path to your xcodeproj folder
-xcode_scheme: TravisDemo
+language: Swift
+osx_image: xcode10.2.1
+xcode_workspace: TravisDemo.xcworkspace
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
 before_install:
-    - pod install
-after_success:
-    - gem install jazzy
-    - make documentation
-deploy:
-  provider: pages
-  skip-cleanup: true
-  #github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
-  local-dir: docs
-  on:
-    branch: master
+- brew update
+- rvm use system
+- sudo gem install cocoapods
+- pod setup
+- pod install
+- pod env
+script:
+- set -o pipefail
+- xcodebuild -workspace TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+#- xcodebuild -showsdks xcodebuild clean && xcodebuild build 
+#script: 
+  #- xcodebuild -project TMSC.xcodeproj -target TMSC_Dev -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  #- xcodebuild -workspace TMSC.xcworkspace -scheme TMSC_Dev -sdk iphoneos clean build
+  #- xcodebuild -showsdks xcodebuild clean && xcodebuild build -scheme TMSC_Dev ONLY_ACTIVE_ARCH=NO

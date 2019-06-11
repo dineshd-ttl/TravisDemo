@@ -12,17 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        #if PROD
-        //My_Target_Codes
-        //print(" IN Prod")
-        #else
-        //My_Other_Target_Codes
-        print(" IN Dev")
-        #endif
 
-        print(" IN Dev")
-        print(" IN Dev")
     }
 
 }
