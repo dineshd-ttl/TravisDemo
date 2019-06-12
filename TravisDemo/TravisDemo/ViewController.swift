@@ -12,13 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("dfdf")
-        print("dfdf")
-        print("dfdf")
-
-        print("dfdf")
-
-        print("dfdf")
+        
 
     }
 
