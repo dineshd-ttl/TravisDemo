@@ -13,9 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("dsds")
-        print("dsds")
-        print("dsds")
     }
 
 }
