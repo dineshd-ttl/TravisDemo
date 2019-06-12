@@ -3,8 +3,7 @@ osx_image: xcode10.2.1
 xcode_workspace: TravisDemo/TravisDemo.xcworkspace
 xcode_scheme: TravisDemoTests
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
+
 script: 
 #- set -o pipefail && xcodebuild -project TravisDemo.xcworkspace -scheme TravisDemoTests -destination platform\=iOS\ Simulator,OS\=12.1,name\=iPhone\ X build test | xcpretty
-#- xcodebuild -project TravisDemo.xcworkspace -target TravisDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-#- xcodebuild clean build -workspace TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator -configuration Debug | xcpretty -c
-- xcodebuild -workspace TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xcodebuild -project TravisDemo.xcworkspace -target TravisDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
