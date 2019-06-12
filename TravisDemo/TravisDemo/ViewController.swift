@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
   print("update pod lock")
+        print("update pod lock")
     }
 
 }
