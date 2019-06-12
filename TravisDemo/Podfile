@@ -6,7 +6,7 @@ target 'TravisDemo' do
   use_frameworks!
 
   # Pods for TravisDemo
-
+pod 'MBProgressHUD'
 
 
   target 'TravisDemoTests' do
