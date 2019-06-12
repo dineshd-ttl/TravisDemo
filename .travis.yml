@@ -1,9 +1,9 @@
 language: Swift
 osx_image: xcode10.2.1
-xcode_workspace: TravisDemo/TravisDemo.xcworkspace
+xcode_workspace: TravisDemo/TravisDemo/TravisDemo.xcworkspace
 xcode_scheme: TravisDemoTests
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
 
 script: 
-- xcodebuild clean build -workspace TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator -configuration Debug | xcpretty -c
+- xcodebuild clean build -workspace TravisDemo/TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator -configuration Debug | xcpretty -c
 
