@@ -20,6 +20,7 @@
 		1857306222A68A5B00AAA96D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1857303222A67FD700AAA96D /* Assets.xcassets */; };
 		1857306322A68A5B00AAA96D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1857302F22A67FD500AAA96D /* Main.storyboard */; };
 		4E05CBEB1C25B13F8999C268 /* Pods_TravisDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468D66289F835B469A4FB4AE /* Pods_TravisDemoTests.framework */; };
+		DFAA0787456834EDD5959E0F /* Pods_TravisDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B65F63208CE9DDCC2CA492 /* Pods_TravisDemo.framework */; };
 		EC9795BCC15DBB017D3B7B22 /* Pods_TravisDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598A437307813EB2ADA5F55D /* Pods_TravisDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAA0787456834EDD5959E0F /* Pods_TravisDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
