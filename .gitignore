@@ -42,4 +42,4 @@ Carthage/Build
 Pods/
 **/.DS_Store
 Podfile.lock
-*.xcworkspace
+#*.xcworkspace
