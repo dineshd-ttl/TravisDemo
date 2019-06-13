@@ -39,7 +39,7 @@ xcuserdata/
 *.iml
 
 Carthage/Build
-Pods/
+#Pods/
 **/.DS_Store
 Podfile.lock
 #*.xcworkspace
