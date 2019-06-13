@@ -4,5 +4,14 @@ xcode_workspace: TravisDemo/TravisDemo/TravisDemo.xcworkspace
 xcode_scheme: TravisDemoTests
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
 
+before_install:
+- brew update
+- rvm use system
+- sudo gem install cocoapods
+- pod setup
+- pod install
+- pod env
+
 script: 
+- set -o pipefail
 - xcodebuild clean build -workspace TravisDemo/TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator -configuration Debug | xcpretty -c
