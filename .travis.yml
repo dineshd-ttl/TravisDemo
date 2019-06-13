@@ -5,5 +5,6 @@ xcode_scheme: TravisDemoTests
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
 
 script: 
-- xcodebuild clean build -workspace TravisDemo/TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator -configuration Debug | xcpretty -c
+- ./scripts/travis-ci.sh
+#- xcodebuild clean build -workspace TravisDemo/TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator -configuration Debug | xcpretty -c
 
