@@ -38,8 +38,8 @@ xcuserdata/
 *.xml
 *.iml
 
-#Carthage/Build
-#Pods/
-#**/.DS_Store
-#Podfile.lock
-#*.xcworkspace
+Carthage/Build
+Pods/
+**/.DS_Store
+Podfile.lock
+*.xcworkspace
