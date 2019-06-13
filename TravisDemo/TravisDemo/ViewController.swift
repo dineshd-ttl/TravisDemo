@@ -14,7 +14,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         print("update pod lock")
-        print("update pod lock")
 
     }
 
