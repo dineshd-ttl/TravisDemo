@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print("update gitignor 02")
         print("update gitignor 02")
+        print("update gitignor 02")
+
     }
 
 }
