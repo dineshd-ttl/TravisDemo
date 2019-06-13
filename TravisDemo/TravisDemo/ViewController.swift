@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("update gitignor 02")
+        print("update gitignor 02")
     }
 
 }
