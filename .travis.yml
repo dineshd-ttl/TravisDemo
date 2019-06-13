@@ -7,7 +7,5 @@ xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
 #script: 
 #- ./scripts/travis-ci.sh
 #- xcodebuild clean build -workspace TravisDemo/TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator -configuration Debug | xcpretty -c
-before_install:
-    - brew update
-    - brew install xctool
+
 script: xctool -workspace TravisDemo.xcworkspace -scheme TravisDemo test
