@@ -7,4 +7,4 @@ xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
 script: 
 #- set -o pipefail
 #- xcodebuild clean build -workspace TravisDemo/TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator -configuration Debug 
-- xcodebuild -workspace TravisDemo/TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator
+- xcodebuild -workspace TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator
