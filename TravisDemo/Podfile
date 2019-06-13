@@ -21,3 +21,12 @@ pod 'IQKeyboardManagerSwift'
   end
 
 end
+
+target 'TravisDemo_Dev' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+  # Pods for TravisDemo
+  pod 'MBProgressHUD'
+  pod 'IQKeyboardManagerSwift'
+  end
